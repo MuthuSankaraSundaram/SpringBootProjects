@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Register for a course</title>
+        
+        <script type="text/javascript" src="myscript.js"></script>
+    </head>
+    <body>
+        <h2 style="color: yellow;font-size: 32px;">KICKSTART WITH AN EXCITING COURSE</h2>
+
+        <form action="http://localhost:8080/course/enroll" method="post">
+            <label for="name">ENTER YOUR NAME:</label><br>
+            <input type="text" name="name"><br><br>
+
+            <label for="email">ENTER YOUR EMAILID:</label><br>
+            <input type="text" name="emailid"><br><br>
+
+            <label for="course">CHOOSE YOUR COURSE</label><br>
+            <select name="CourseName">
+                <option value="Java Essential">JAVA ESSENTIAL</option>
+                <option value="Python">PYTHON</option>
+                <option value="SpringBoot">SPRINGBOOT</option>
+            </select>
+
+            <br><br>
+            <button type="submit">SUBMIT</button>
+        </form>
+
+        <script type="text/javascript">
+            showcourses();
+        </script>
+    </body>
+</html>
+
+<style>
+    label{
+        font-weight: 800;
+    }
+    body{
+        background-color: black;
+        text-align: center;
+    }
+    form{
+        background-color: white;
+        padding: 20px;
+        margin: auto;
+        width: 400px;
+    }
+    input,select,button{
+        padding: 10px;
+        margin: 10px;
+        width: 90%;
+        font-weight: 400;
+    }
+    button{
+        background-color: lightgreen;
+    }
+    button:hover{
+        cursor: pointer;
+        background-color: beige;
+    }
+</style>
